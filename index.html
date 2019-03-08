@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Anna V. "Missy" Leathers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">designs<span
+                    class="w3-hide-small">@missyleathers</span>.com</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love creativity!</em></p>
+        <p>My experience includes 10+ years working on projects that create system solutions to solve business problems.
+            I am a front-end developer who enjoys working on creating websites, specifically visual and interaction
+            design and development. My career experience and full-stack web design & development certification from the
+            University of California Irvine provide me with a unique perspective on how end-users interact with
+            websites. I enjoy being creative in my day-to-day work and producing beautiful websites.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-small">
+                <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Missy Leathers</b></p><br> -->
+                <img src="assets/images/missy.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                    alt="Photo of Me" width="250" height="166">
+                <br></br>
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Welcome to my website! My hobbies include painting on glass, watercolor, painting cooking, gardening,
+                    listening to music, and making my home my sanctuary. My husband and I are homebodies and love
+                    spending time with each other and our Wire Fox Terrier "Rusty". </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY PROJECTS</h3>
+        <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to go to the
+                websites.</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <a href="http://www.whatchagot.net" target="_blank">
+                    <img src="assets/images/WhatChaGot.jpg" style="width:100%" ; class="w3-hover-opacity"
+                        alt="What 'Cha Got'">
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://dashboard.heroku.com/apps/updogsweatherfinder" target="_blank">
+                    <img src="assets/images/WeatherForum.jpg" style="width:100%" ; class="w3-hover-opacity"
+                        alt="Weather Forum">
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://lit-wildwood-26082.herokuapp.com" target="_blank">
+                    <img src="assets/images/NewBestFriend.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="New Best Friend">
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://goplayruff.herokuapp.com" target="_blank">
+                    <img src="assets/images/GoPlayRuff.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="Go Play Ruff">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <a href="https://mysterious-depths-13543.herokuapp.com" target="_blank">
+                    <img src="assets/images/ClickyGame.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="Clicky Game">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/w3images/p6.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/w3images/p7.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/w3images/p8.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder">
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONNECT WITH ME</h3>
+        <p class="w3-center"><em>I'd love to hear from you!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="assets/images/Laguna.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Newport
+                    Coast,
+                    CA<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:
+                    415.847.3175<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    designs@missyleathers.com<br>
+                </div>
+
+                <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p> -->
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to
+            top</a>
+        <div class="w3-xlarge w3-section w3-padding-small">
+
+            <a href="https://github.com/avleathers">
+                <img src="assets/images/github.jpg" class="social" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/annavleathers/">
+                <img src="assets/images/linkedin.jpg" class="social" alt="LinkedIn">
+            </a>
+            <a href="https://stackexchange.com/users/14451311/missy-leathers">
+                <img src="assets/images/stackoverflow.jpg" class="social" alt="Stack Overflow">
+            </a>
+
+        </div>
+        <p>Anna V. "Missy" Leathers, 2019</p>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
