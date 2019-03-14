@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Missy Leathers Project Portfoilio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avleathers/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avleathers/Portfolio/issues"
+  },
+  "homepage": "https://github.com/avleathers/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1"
+  }
+}
