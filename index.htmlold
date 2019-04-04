@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -22,12 +20,12 @@
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-right">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
-            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i> -->
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
             </a>
         </div>
 
@@ -61,8 +59,8 @@
         </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-small">
-                <img src="images/missy.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
-                    width="250" height="166">
+                <img src="../assets/images/missy.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                    alt="Photo of Me" width="250" height="166">
                 <br></br>
             </div>
 
@@ -94,8 +92,8 @@
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
                 <a href="http://www.whatchagot.net" target="_blank">
-                    <img src="images/WhatChaGot.jpg" style="width:100%" ; class="w3-hover-opacity" alt="What 'Cha Got'"
-                        width="175" height="200">
+                    <img src="../assets/images/WhatChaGot.jpg" style="width:100%" ; class="w3-hover-opacity"
+                        alt="What 'Cha Got'" width="175" height="200">
                 </a>
                 <h4>What 'Cha Got?</h4>
                 <p>Tools used to create this site include HTML5, CSS, Bulma CSS Framework, Javascript/jQuery, AJAX,
@@ -104,8 +102,8 @@
 
             <div class="w3-col m3">
                 <a href="http://weatherblogger.herokuapp.com/" target="_blank">
-                    <img src="images/WeatherForum.jpg" style="width:100%" ; class="w3-hover-opacity" alt="Weather Forum"
-                        width="175" height="200">
+                    <img src="../assets/images/WeatherForum.jpg" style="width:100%" ; class="w3-hover-opacity"
+                        alt="Weather Forum" width="175" height="200">
                 </a>
                 <h4>The Weather Forum</h4>
                 <p>Tools used to create this site include HTML5, CSS, Materialize CSS Framework, API routes,
@@ -115,8 +113,8 @@
 
             <div class="w3-col m3">
                 <a href="https://mysterious-depths-13543.herokuapp.com" target="_blank">
-                    <img src="images/MemoryGame.jpg" style="width:100%" class="w3-hover-opacity" alt="Clicky Game"
-                        width="175" height="200">
+                    <img src="../assets/images/MemoryGame.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="Clicky Game" width="175" height="200">
                 </a>
                 <h4>Dog Memory Game</h4>
                 <p>Tools used to create this site are React, HTML, CSS, Javascript, Node.js, Express, and JSON</p>
@@ -125,16 +123,16 @@
 
             <div class="w3-col m3">
                 <a href="https://goplayruff.herokuapp.com" target="_blank">
-                    <img src="images/GoPlayRuff.jpg" style="width:100%" class="w3-hover-opacity" alt="Go Play Ruff"
-                        width="175" height="200">
+                    <img src="../assets/images/GoPlayRuff.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="Go Play Ruff" width="175" height="200">
                 </a>
                 <h4>Go! Play! Ruff!</h4>
                 <p>Tools used to create this site are React, Node.js, Express, MaterialUI, and MongoDB</p>
             </div>
         </div>
 
-
-        <!-- <div class="w3-col m3">
+        
+            <!-- <div class="w3-col m3">
                 <a href="https://lit-wildwood-26082.herokuapp.com" target="_blank">
                     <img src="images/NewBestFriend.jpg" style="width:100%" class="w3-hover-opacity"
                         alt="New Best Friend" width="175" height="200">
@@ -142,18 +140,21 @@
                 <h4>New Best Friend Finder</h4>
                 <p>Tools used to create this site include HTML5, CSS, API routes, Javascript/jQuery, Node, Express, and 
                     JSON</p>
+
             </div> -->
 
-        <!-- <div class="w3-col m3">
+            <!-- <div class="w3-col m3">
                 <img src="/w3images/p6.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder" width="175" height="200">
             </div>
+
             <div class="w3-col m3">
                 <img src="/w3images/p7.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder" width="175" height="200">
             </div>
+
             <div class="w3-col m3">
                 <img src="/w3images/p8.jpg" style="width:100%" class="w3-hover-opacity" alt="Placeholder" width="175" height="200">
             </div> -->
-    </div>
+        </div>
     </div>
 
     <!-- Third Parallax Image with Contact Text -->
@@ -170,7 +171,7 @@
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-                <img src="images/Laguna.jpg" class="w3-image w3-round" style="width:100%">
+                <img src="../assets/images/Laguna.jpg" class="w3-image w3-round" style="width:100%">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
@@ -201,39 +202,6 @@
                         <i class="fa fa-paper-plane"></i> SEND MESSAGE
                     </button>
                 </form>
-
-                <!-- Modal -->
-                <!-- <div class="container">
-                    <h2>Thank you!</h2> -->
-                    <!-- Trigger the modal with a button -->
-                    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-                  
-                    <!-- Modal -->
-                    <!-- <div class="modal fade" id="myModal" role="dialog">
-                      <div class="modal-dialog"> -->
-                      
-                        <!-- Modal content-->
-                        <!-- <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    
-                  </div> -->
-
-                  <!-- End of Modal -->
-
-
             </div>
         </div>
     </div>
@@ -245,10 +213,10 @@
         <div class="w3-xlarge w3-section w3-padding-small">
 
             <a href="https://github.com/avleathers">
-                <img src="images/github.jpg" class="social" alt="Github">
+                <img src="../assets/images/github.jpg" class="social" alt="Github">
             </a>
             <a href="https://www.linkedin.com/in/annavleathers/">
-                <img src="images/linkedin.jpg" class="social" alt="LinkedIn">
+                <img src="../assets/images/linkedin.jpg" class="social" alt="LinkedIn">
             </a>
             <!-- <a href="https://stackexchange.com/users/14451311/missy-leathers">
                 <img src="images/stackoverflow.jpg" class="social" alt="Stack Overflow">
@@ -266,6 +234,7 @@
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
         }
+
         // Change style of navbar on scroll
         window.onscroll = function () { myFunction() };
         function myFunction() {
@@ -276,6 +245,7 @@
                 navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
             }
         }
+
         // Used to toggle the menu on small screens when clicking on the menu button
         function toggleFunction() {
             var x = document.getElementById("navDemo");
@@ -297,20 +267,12 @@
                     if (data == "sent") {
                         $("#message").empty().html("Email is been sent at " + to + " . Please check inbox!");
                     }
+
                 });
             });
         });
-    </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    </script>
 
 </body>
 
