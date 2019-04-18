@@ -4,8 +4,7 @@ var nodemailer = require("nodemailer");
 var app = express();
 
 app.use(express.static("./assets"));
-app.use(bodyParser.urlencoded());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 var smtpTransport = nodemailer.createTransport({
     service: "gmail",

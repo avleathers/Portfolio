@@ -187,16 +187,16 @@
 
                 <!-- Adding code to send form -->
 
-                <form method="post" name="myemailform" action="/send">
+                <form id="myemailform">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required id="name" name="name">
                         </div>
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="from">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required id="from" name="from">
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="text">
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required id="text" name="text">
                     <button class="w3-button w3-black w3-right w3-section" type="submit">
                         <i class="fa fa-paper-plane"></i> SEND MESSAGE
                     </button>
@@ -258,6 +258,16 @@
         <p>Anna V. "Missy" Leathers, 2019</p>
     </footer>
 
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script>
         // Modal Image Gallery
         function onClick(element) {
@@ -287,30 +297,33 @@
         }
         // Code for sending email - Missy added March 11th from codeforgeek.com site
         $(document).ready(function () {
-            var from, to, subject, text;
-            $("#send_email").click(function () {
-                to = $("#to").val();
-                subject = $("#subject").val();
-                text = $("#content").val();
+            var myForm = $("#myemailform");
+
+            myForm.submit(function (evt) {
+                evt.preventDefault();
+
+                var data = {
+                    from: $("#from").val(),
+                    name: $("#name").val(),
+                    text: $("#text").val()
+                };
+
                 $("#message").text("Sending E-mail...Please wait");
-                $.get("http://localhost:3000/send", { to: to, subject: subject, text: text }, function (data) {
-                    if (data == "sent") {
-                        $("#message").empty().html("Email is been sent at " + to + " . Please check inbox!");
+                $.ajax({
+                    url: "/send",
+                    type: "POST",
+                    data: JSON.stringify(data),
+                    contentType: "application/json; charset=utf-8",
+                    success: function(data) {
+                        if (data === "sent") {
+                            alert('SENT!');
+                            $("#message").empty().html("Email is been sent at " + data.to + " . Please check inbox!");
+                        }
                     }
                 });
             });
         });
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
 </body>
 
