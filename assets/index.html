@@ -22,28 +22,25 @@
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-right">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
-            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i> -->
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#home" class="w3-bar-item w3-button w3-right">HOME</a>
             </a>
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">  
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Anna V. <span
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">Anna V. <span
                     class="w3-hide-small">"Missy"</span>Leathers</span>
         </div>
     </div>
@@ -54,7 +51,7 @@
         <p class="w3-center"><em>I love creativity!</em></p>
         <p>Welcome to my website! My experience includes 10+ years working on projects that create system solutions to
             solve business problems.
-            I am a certified full-stack developer who enjoys creating beautiful websites. My career experience and
+            I am a certified full-stack developer who enjoys creating websites that are pleasing to the eye and easy to use. My career experience and
             full-stack web design & development certification from the
             University of California Irvine provide me with a unique perspective on how end-users interact with
             websites. I enjoy being creative in my day-to-day work and producing beautiful websites.
@@ -80,7 +77,7 @@
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">PORTFOLIO</span>
         </div>
     </div>
 
@@ -159,7 +156,7 @@
     <!-- Third Parallax Image with Contact Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">CONTACT</span>
         </div>
     </div>
 
@@ -183,8 +180,6 @@
                     designs@missyleathers.com<br>
                 </div>
 
-                <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p> -->
-
                 <!-- Adding code to send form -->
 
                 <form id="myemailform">
@@ -197,7 +192,7 @@
                         </div>
                     </div>
                     <input class="w3-input w3-border" type="text" placeholder="Message" required id="text" name="text">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                    <button class="w3-button w3-black w3-right w3-section w3-round" type="submit">
                         <i class="fa fa-paper-plane"></i> SEND MESSAGE
                     </button>
                 </form>
@@ -224,31 +219,27 @@
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
-                        </div>
-                        
+                        </div>          
                       </div>
-                    </div>
-                    
+                    </div>                 
                   </div> -->
-
                   <!-- End of Modal -->
-
-
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to
+        <a href="#home" class="w3-button w3-light-grey w3-round"><i class="fa fa-arrow-up w3-margin-right"></i>Back to
             top</a>
         <div class="w3-xlarge w3-section w3-padding-small">
 
             <a href="https://github.com/avleathers">
-                <img src="images/github.jpg" class="social" alt="Github">
+                <img src="images/github.jpg" class="social" alt="Github" style="border-radius: 10px">
             </a>
             <a href="https://www.linkedin.com/in/annavleathers/">
-                <img src="images/linkedin.jpg" class="social" alt="LinkedIn">
+                <img src="images/linkedin.jpg" class="social" alt="LinkedIn"
+                style="border-radius: 10px">
             </a>
             <!-- <a href="https://stackexchange.com/users/14451311/missy-leathers">
                 <img src="images/stackoverflow.jpg" class="social" alt="Stack Overflow">

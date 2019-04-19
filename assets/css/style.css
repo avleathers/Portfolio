@@ -5,6 +5,7 @@ body, html {
   color: black;
   line-height: 1.8;
   scroll-behavior: smooth;
+  background-color: aliceblue;
 }
 
 /* Create a Parallax Effect */
