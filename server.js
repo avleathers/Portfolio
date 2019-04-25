@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 var app = express();
+var port = process.env.PORT || 3000;
 
 app.use(express.static("./assets"));
 app.use(bodyParser.json());
@@ -43,6 +44,6 @@ app.post('/send',function(req,res){
 
 /*--Routing Over--*/
 
-app.listen(3000,function(){
-    console.log("Express Started on Port 3000");
+app.listen(port, function() {
+    console.log("Express Started on Port", port);
 });
