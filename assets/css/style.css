@@ -8,15 +8,7 @@ body, html {
   background-color: rgb(170, 192, 211);
 }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
+/* First image (Logo. Full height) Parallax Effect*/
 .bgimg-1 {
   background-image: url("../images/coder.jpg");
   height: 100%;
@@ -30,20 +22,12 @@ body, html {
 .bgimg-2 {
   background-image: url("../images/curiosityblue.png");
   height: 200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../images/curiosityblue.png");
   min-height: 200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -51,12 +35,4 @@ body, html {
 
 .w3-bar-item {
   float: right;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
 }
