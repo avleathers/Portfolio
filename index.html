@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Anna V. "Missy" Leathers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i>
+                CONTACT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i>
+                PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#home" class="w3-bar-item w3-button w3-right">HOME</a>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">Anna V.
+                <span class="w3-hide-small">"Missy"</span>Leathers</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love creativity!</em></p>
+        <p>Welcome to my website! My experience includes 10+ years working on projects that create system solutions to
+            solve business problems.
+            I am a website developer with a focus on creating websites that are pleasing to the eye and easy to use. My
+            career experience and full-stack web design & development certification from the University of California
+            Irvine provide me with a unique perspective on how end-users interact with websites. I enjoy being creative
+            in my day-to-day work and producing beautiful websites. Please check out my portfolio of projects and if you
+            would like to chat with me about creating a website for you, send me a message by completing the information
+            in the Contact section below.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-small">
+                <img src="images/missy.jpg" class="w3-round w3-image" alt="Photo of Me" width="250" height="166">
+                <br></br>
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>On a personal note, I graduated from The University of Texas at Austin with a degree in Business
+                    Education, and I am an avid Longhorn fan who has orange blood! My hobbies include painting on glass,
+                    watercolor, cooking, gardening, listening to music, and making my home my sanctuary. My husband and
+                    I are homebodies and love spending time with each other and our Wire Fox Terrier "Rusty". </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span
+                class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY PROJECTS</h3>
+        <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to go to the
+                websites.</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <a href="https://schluetergroup.com" target="_blank">
+                    <img src="images/SchlueterGroup.jpg" style="width:100%" class="w3-hover-opacity"
+                        alt="The Schlueter Group" width="175" height="200">
+                </a>
+                <h4>The Schlueter Group</h4>
+                <p>Tools used to create this site are HTML, CSS, Javascript, W3.CSS</p>
+            </div>
+            <div class="w3-col m3">
+                <a href="http://www.whatchagot.net" target="_blank">
+                    <img src="images/WhatChaGot.jpg" style="width:100%" ; class="w3-hover-opacity" alt="What 'Cha Got'"
+                        width="175" height="200">
+                </a>
+                <h4>What 'Cha Got?</h4>
+                <p>Tools used to create this site include HTML5, CSS, Bulma CSS Framework, Javascript/jQuery, AJAX,
+                    Firebase, and Giphy & Edamam API's</p>
+            </div>
+
+            <div class="w3-col m3">
+                <a href="http://weatherblogger.herokuapp.com/" target="_blank">
+                    <img src="images/WeatherForum.jpg" style="width:100%" ; class="w3-hover-opacity" alt="Weather Forum"
+                        width="175" height="200">
+                </a>
+                <h4>The Weather Forum</h4>
+                <p>Tools used to create this site include HTML5, CSS, Materialize CSS Framework, API routes,
+                    Javascript/jQuery, Node, Express, JSON, SQL, and Sequelize</p>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://mysterious-depths-13543.herokuapp.com" target="_blank">
+                    <img src="images/MemoryGame.jpg" style="width:100%" class="w3-hover-opacity" alt="Clicky Game"
+                        width="175" height="200">
+                </a>
+                <h4>Dog Memory Game</h4>
+                <p>Tools used to create this site are React, HTML, CSS, Javascript, Node.js, Express, and JSON</p>
+            </div>
+        </div>
+
+        <div class="w3-center">
+            <div class="w3-bar">
+                <a href="index.html#portfolio" class="w3-button">«</a>
+                <a href="index.html#portfolio" class="w3-button w3-light-grey">1</a>
+                <a href="portfolio.html" class="w3-button">2</a>
+                <a href="portfolio.html" class="w3-button">»</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span
+                class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-round">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONNECT WITH ME</h3>
+        <p class="w3-center"><em>I'd love to hear from you!</em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="images/fourpeaks.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> North
+                    Scottsdale, AZ<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:
+                    415.847.3175<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    designs@missyleathers.com<br>
+                </div>
+
+                <!-- Adding code to send form -->
+
+                <form id="myemailform">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required id="name"
+                                name="name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required id="from"
+                                name="from">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required id="text" name="text">
+                    <button class="w3-button w3-black w3-right w3-section w3-round" type="submit"
+                        data-target="#myModal">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+
+                <!-- Modal -->
+                <div class="container">
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Thank you!</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Your message has been sent.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Modal -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey w3-round"><i class="fa fa-arrow-up w3-margin-right"></i>Back to
+            top</a>
+        <div class="w3-xlarge w3-section w3-padding-small">
+
+            <a href="https://github.com/avleathers">
+                <img src="images/github.jpg" class="social" alt="Github" style="border-radius: 10px">
+            </a>
+            <a href="https://www.linkedin.com/in/annavleathers/">
+                <img src="images/linkedin.jpg" class="social" alt="LinkedIn" style="border-radius: 10px">
+            </a>
+            <!-- <a href="https://stackexchange.com/users/14451311/missy-leathers">
+                <img src="images/stackoverflow.jpg" class="social" alt="Stack Overflow">
+            </a> -->
+
+        </div>
+        <p>Anna V. "Missy" Leathers, 2019</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        // Code for sending email - Missy added March 11th from codeforgeek.com site
+        $(document).ready(function () {
+            var myForm = $("#myemailform");
+            var modal = $('#myModal');
+            var modalMessage = modal.find('.modal-body');
+
+            myForm.submit(function (evt) {
+                evt.preventDefault();
+
+                var data = {
+                    from: $("#from").val(),
+                    name: $("#name").val(),
+                    text: $("#text").val()
+                };
+
+                modal.modal();
+                modalMessage.text("Sending E-mail...Please wait");
+
+                $.ajax({
+                    url: "/send",
+                    type: "POST",
+                    data: JSON.stringify(data),
+                    contentType: "application/json; charset=utf-8",
+                    success: function (res) {
+                        if (res === "sent") {
+                            modalMessage.text("Email has been sent. Thank you " + data.name + "!");
+                        }
+                    }
+                });
+
+                // Clear form after submission
+                $('#from').val("");
+                $('#name').val("");
+                $('#text').val("");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
