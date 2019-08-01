@@ -1,2 +1,2 @@
 # Portfolio
-Missy Leathers Project Portfoilio
+Missy Leathers Project Portfolio
