@@ -8,6 +8,10 @@ body, html {
   background-color: rgb(189, 212, 232);
 }
 
+#myID {
+  margin: 5%;
+}
+
 /* First image (Logo. Full height) Parallax Effect*/
 .bgimg-1 {
   background-image: url("../images/coder.jpg");
@@ -15,7 +19,8 @@ body, html {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 100% auto;
 }
 
 /* Second image (Portfolio) */
